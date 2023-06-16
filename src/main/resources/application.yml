@@ -1,0 +1,26 @@
+student:
+  id: 4
+  name: zhangsan
+  password: 123456
+  birthday: 2020-12-16
+
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/mydb?characterEncoding=utf-8&&serverTimeZone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+#    log
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+#mybatis:
+
+#  mapper-locations: classpath:mapper/*Mapper.xml
+#  type-aliases-package: com.lileping.demo1.domin
